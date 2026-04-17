@@ -1,4 +1,4 @@
-from endstone import Plugin
+from endstone.plugin import Plugin
 
 class WaffenLib(Plugin):
     def on_enable(self) -> None:
