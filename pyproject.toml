@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waffenlib"
+version = "0.1.0"
+description = "WaffenLib - основа для плагинов WaffenBOT"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Waffentrager", email = "eeron446@email.com" },
+]
+dependencies = ["endstone"]
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.entry-points."endstone"]
+waffenlib = "waffenlib:WaffenLib"
+
+[tool.setuptools.packages.find]
+where = ["src"]
